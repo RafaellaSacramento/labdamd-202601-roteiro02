@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual envs (se criar dentro do projeto)
+.venv/
+venv/
+
+# Credenciais
+.env
+**/.env
+
+# VS Code
+.vscode/
