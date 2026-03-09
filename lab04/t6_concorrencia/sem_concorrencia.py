@@ -31,7 +31,7 @@ def transferir_sem_lock(valor: int, nome: str) -> None:
     print(f"  [{nome}] transferiu R${valor}. Saldo registrado: R${novo_saldo}")
 
 
-def transferir_sem_lock_barreira(valor: int, nome: str, barreira: multiprocessing.Barrier) -> None:
+def transferir_sem_lock_barreira(valor: int, nome: str, barreira: object) -> None:
     """
     Variante deterministica: a barreira garante que ambos processos leiam o saldo
     antes de qualquer um escrever, tornando a race condition reproduzivel.
